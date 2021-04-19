@@ -8,7 +8,6 @@ export const getProducts = () => ({
   payload: category,
 });
 
-
 // dispatch => {
 //   axios({
 //     method: 'post',
