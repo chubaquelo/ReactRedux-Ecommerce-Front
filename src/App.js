@@ -9,16 +9,18 @@ function App() {
   return (
     <>
       <Router>
-        <Header />
-        <Switch>
-          <Route exact path="/">
-            <Main />
-          </Route>
-          <Route path="/product/:id">
-            <Product />
-          </Route>
-        </Switch>
-        <Footer />
+        <main className="w-8/12 mx-auto min-h-screen">
+          <Header />
+          <Switch>
+            <Route exact path="/">
+              <Main />
+            </Route>
+            <Route path="/product/:id">
+              <Product />
+            </Route>
+          </Switch>
+          <Footer />
+        </main>
       </Router>
     </>
   );

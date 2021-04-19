@@ -4,3 +4,11 @@
 @tailwind components;
 @tailwind utilities;
 /* stylelint-enable */
+
+.h-10percent-vh {
+  height: 10vh;
+}
+
+.h-80percent-vh {
+  min-height: 80vh;
+}

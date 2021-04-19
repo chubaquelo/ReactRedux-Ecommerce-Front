@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Header = () => (
-  <header>
+  <header className="bg-gray-200 h-10percent-vh">
     <p>This is the Header.</p>
   </header>
 );

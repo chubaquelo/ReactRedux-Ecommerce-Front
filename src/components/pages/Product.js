@@ -1,7 +1,9 @@
 import React from 'react';
 
 const Product = () => (
-  <p>This is a single product.</p>
+  <section className="h-80percent-vh">
+    <p>This is a Single Product page.</p>
+  </section>
 );
 
 export default Product;
