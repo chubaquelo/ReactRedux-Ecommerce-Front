@@ -5,10 +5,10 @@
 @tailwind utilities;
 /* stylelint-enable */
 
-.h-10percent-vh {
-  height: 10vh;
+.h-15percent-vh {
+  height: 15vh;
 }
 
-.h-80percent-vh {
-  min-height: 80vh;
+.h-70percent-vh {
+  min-height: 70vh;
 }

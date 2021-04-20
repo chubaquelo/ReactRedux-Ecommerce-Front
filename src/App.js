@@ -4,12 +4,13 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Main from './components/pages/Main';
 import Product from './components/pages/Product';
+import DefaultNotFound from './components/pages/DefaultNotFound';
 
 function App() {
   return (
     <>
       <Router>
-        <main className="w-8/12 mx-auto min-h-screen">
+        <main className="w-11/12 lg:w-8/12 mx-auto min-h-screen">
           <Header />
           <Switch>
             <Route exact path="/">
@@ -17,6 +18,9 @@ function App() {
             </Route>
             <Route path="/product/:id">
               <Product />
+            </Route>
+            <Route path="*">
+              <DefaultNotFound />
             </Route>
           </Switch>
           <Footer />
