@@ -2,7 +2,7 @@ import React from 'react';
 
 const Carousel = () => (
   <div className="carousel relative shadow-2xl bg-white">
-
+    {/*
     <div className="carousel-inner relative overflow-hidden w-full">
       <input className="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked" />
       <div className="carousel-item absolute opacity-0" style={{ height: '50vh' }}>
@@ -38,7 +38,7 @@ const Carousel = () => (
         </li>
       </ol>
 
-    </div>
+    </div> */}
   </div>
 );
 
