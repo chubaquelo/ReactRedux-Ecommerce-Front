@@ -49,7 +49,7 @@ const Header = () => (
         >
           <button
             type="button"
-            className="py-1 bg-yellow-500 px-2 cursor-pointer hover:bg-yellow-600 text-black shadow-md"
+            className="py-1 bg-yellow-300 px-2 cursor-pointer hover:bg-yellow-400 text-black shadow-md"
           >
             Cart: 0 Items
           </button>
