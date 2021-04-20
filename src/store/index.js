@@ -3,7 +3,7 @@ import thunk from 'redux-thunk';
 import productReducer from './reducers/product';
 
 const rootReducer = combineReducers({
-  product: productReducer,
+  products: productReducer,
 });
 
 const store = createStore(rootReducer, applyMiddleware(thunk));

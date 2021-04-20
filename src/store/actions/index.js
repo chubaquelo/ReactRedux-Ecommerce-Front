@@ -1,52 +1,29 @@
-// import axios from 'axios';
+import axios from 'axios';
 
-// const SERVER_URL = 'https://esteban-sergio-bookstore-app.herokuapp.com';
+const SERVER_URL = 'https://esteban-sergio-bookstore-app.herokuapp.com';
 
-export const getProducts = () => ({
-  type: 'GET_PRODUCTS',
-  // HERE GOES THE ASYNC
-  payload: category,
-});
+const getProducts = () => dispatch => {
+  axios({
+    method: 'get',
+    url: `${SERVER_URL}/products`,
+    headers: {
+      Accept: 'application/json',
+    },
+  }).then(response => {
+    if (response) {
+      dispatch(
+        {
+          type: 'GET_PRODUCTS',
+          payload: response.data,
+        },
+      );
+    }
+  }).catch(error => (
+    {
+      type: 'GET_PRODUCTS_ERROR',
+      payload: error,
+    }
+  ));
+};
 
-// dispatch => {
-//   axios({
-//     method: 'post',
-//     url: `${SERVER_URL}/books`,
-//     data: {
-//       title: book.title,
-//       author: book.author,
-//       category_id: book.category,
-//       progress: 0,
-//     },
-//     headers: {
-//       Accept: 'application/json',
-//       Authorization: authToken,
-//     },
-//   }).then(response => {
-//     if (response) {
-//       const categories = [
-//         'All',
-//         'Action',
-//         'Biography',
-//         'History',
-//         'Horror',
-//         'Kids',
-//         'Learning',
-//         'Sci-Fi',
-//       ];
-//       const modifiedBook = {
-//         ...book,
-//         id: response.data.id,
-//         progress: '0',
-//         category: {
-//           id: book.category,
-//           name: categories[book.category],
-//         },
-//       };
-//       window.console.log(modifiedBook);
-//       dispatch({
-//         type: 'CREATE_USER_BOOK',
-//         payload: modifiedBook,
-//       });
-//     }
-//   }).catch(error => dispatch({ type: 'CREATE_USER_BOOK_ERROR', payload: error }));
+export default getProducts;
