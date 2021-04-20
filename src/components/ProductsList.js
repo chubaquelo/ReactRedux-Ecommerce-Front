@@ -9,12 +9,11 @@ const ProductsList = () => {
   const products = useSelector(state => state.products);
 
   useEffect(() => {
-    // setLoading(false);
     dispatch(getProducts());
   }, []);
 
   const productMap = products.map(p => (
-    <article key={p.id} className="w-11/12 md:w-4/12">
+    <article key={p.id} className="w-full sm:w-1/2 xl:w-4/12">
       <ProductCard
         key={p.id}
         keyForLink={p.id}
@@ -24,8 +23,6 @@ const ProductsList = () => {
       />
     </article>
   ));
-
-  console.log(productMap, 'from ProductsList');
 
   return (
     <section className="mt-6 flex flex-row flex-wrap">

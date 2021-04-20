@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const ProductCard = ({
   key, keyForLink, title, description, price,
 }) => (
-  <div className="w-80 flex justify-center items-center" key={key}>
+  <div className="w-full flex justify-center items-center" key={key}>
     <div className="w-full p-4">
       <div className="card flex flex-col justify-center p-10 bg-white rounded-lg shadow-2xl">
         <div className="prod-title">
