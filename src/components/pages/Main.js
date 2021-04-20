@@ -1,11 +1,12 @@
 import React from 'react';
 import ProductCard from '../ProductCard';
 // import Carousel from '../Carousel';
+import Hero from '../Hero';
 
 const Main = () => (
   <section className="h-60percent-vh">
-    <p>This is the Main page.</p>
     {/* <Carousel /> */}
+    <Hero />
     <ProductCard />
   </section>
 );

@@ -17,6 +17,14 @@
   min-height: 60vh;
 }
 
+.w-screen-15percent {
+	width: calc(100vw - 10%);
+}
+
+.golden-gradient {
+	background:linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+}
+
 .carousel-open:checked + .carousel-item {
 				position: static;
 				opacity: 100;
