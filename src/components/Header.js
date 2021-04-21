@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Header = () => (
-  <header className="h-15percent-vh flex flex-row justify-center mt-3">
+  <header className="h-15percent-vh flex flex-row justify-center mt-3 w-10/12 mx-auto">
     <div id="logo" className="w-2/12 flex items-center justify-center">
       <Link to="/">
         <img
