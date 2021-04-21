@@ -8,25 +8,23 @@ import DefaultNotFound from './components/pages/DefaultNotFound';
 
 function App() {
   return (
-    <>
-      <Router>
-        <main className="w-11/12 lg:w-8/12 mx-auto min-h-screen">
-          <Header />
-          <Switch>
-            <Route exact path="/">
-              <Main />
-            </Route>
-            <Route path="/product/:id">
-              <Product />
-            </Route>
-            <Route path="*">
-              <DefaultNotFound />
-            </Route>
-          </Switch>
-          <Footer />
-        </main>
-      </Router>
-    </>
+    <Router>
+      <main className="w-11/12 lg:w-8/12 mx-auto min-h-screen">
+        <Header />
+        <Switch>
+          <Route exact path="/">
+            <Main />
+          </Route>
+          <Route path="/product/:id">
+            <Product />
+          </Route>
+          <Route path="*">
+            <DefaultNotFound />
+          </Route>
+        </Switch>
+        <Footer />
+      </main>
+    </Router>
   );
 }
 

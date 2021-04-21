@@ -8,7 +8,7 @@ const Footer = () => (
         <li className="my-2">
           <Link to="/">
             <a
-              className="text-gray-400 hover:text-gray-800 dark:text-gray-300 dark:hover:text-white transition-colors duration-200"
+              className="text-gray-500 hover:text-gray-800 dark:text-gray-500 dark:hover:text-white transition-colors duration-200"
               href="/"
             >
               FAQ
@@ -18,7 +18,7 @@ const Footer = () => (
         <li className="my-2">
           <Link to="/">
             <a
-              className="text-gray-400 hover:text-gray-800 dark:text-gray-300 dark:hover:text-white transition-colors duration-200"
+              className="text-gray-500 hover:text-gray-800 dark:text-gray-500 dark:hover:text-white transition-colors duration-200"
               href="/"
             >
               Configuration
@@ -27,7 +27,7 @@ const Footer = () => (
         </li>
         <li className="my-2">
           <a
-            className="text-gray-400 hover:text-gray-800 dark:text-gray-300 dark:hover:text-white transition-colors duration-200"
+            className="text-gray-500 hover:text-gray-800 dark:text-gray-500 dark:hover:text-white transition-colors duration-200"
             href="https://www.github.com/chubaquelo"
             target="_blank"
             rel="noreferrer"
@@ -37,7 +37,7 @@ const Footer = () => (
         </li>
         <li className="my-2">
           <a
-            className="text-gray-400 hover:text-gray-800 dark:text-gray-300 dark:hover:text-white transition-colors duration-200"
+            className="text-gray-500 hover:text-gray-800 dark:text-gray-500 dark:hover:text-white transition-colors duration-200"
             href="https://www.linkedin.com/in/sergio-obolevich"
             target="_blank"
             rel="noreferrer"
@@ -49,13 +49,13 @@ const Footer = () => (
       <div className="pt-8 flex max-w-xs mx-auto items-center justify-between">
         <a
           href="/"
-          className="text-gray-400 hover:text-gray-800 dark:hover:text-white transition-colors duration-200"
+          className="text-gray-900 hover:text-gray-800 dark:hover:text-white transition-colors duration-200"
         >
           <svg
-            width="20"
-            height="20"
+            width="28"
+            height="28"
             fill="currentColor"
-            className="text-xl hover:text-gray-800 dark:hover:text-white transition-colors duration-200"
+            className="text-xl hover:text-blue-700 dark:hover:text-white transition-colors duration-200"
             viewBox="0 0 1792 1792"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -64,11 +64,11 @@ const Footer = () => (
         </a>
         <a
           href="https://www.twitter.com/sergioObolevich"
-          className="text-gray-400 hover:text-gray-800 dark:hover:text-white transition-colors duration-200"
+          className="text-gray-900 hover:text-blue-400 dark:hover:text-white transition-colors duration-200"
         >
           <svg
-            width="20"
-            height="20"
+            width="28"
+            height="28"
             fill="currentColor"
             className="text-xl hover:text-gray-800 dark:hover:text-white transition-colors duration-200"
             viewBox="0 0 1792 1792"
@@ -79,12 +79,12 @@ const Footer = () => (
         </a>
         <a
           href="https://www.github.com/chubaquelo"
-          className="text-gray-400 hover:text-gray-800 dark:hover:text-white transition-colors duration-200"
+          className="text-gray-900 hover:text-gray-800 dark:hover:text-white transition-colors duration-200"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="20"
-            height="20"
+            width="28"
+            height="28"
             fill="currentColor"
             className="text-xl hover:text-gray-800 dark:hover:text-white transition-colors duration-200"
             viewBox="0 0 1792 1792"
@@ -94,11 +94,11 @@ const Footer = () => (
         </a>
         <a
           href="https://www.linkedin.com/in/sergio-obolevich"
-          className="text-gray-400 hover:text-gray-800 dark:hover:text-white transition-colors duration-200"
+          className="text-gray-900 hover:text-blue-600 dark:hover:text-white transition-colors duration-200"
         >
           <svg
-            width="20"
-            height="20"
+            width="28"
+            height="28"
             fill="currentColor"
             className="text-xl hover:text-gray-800 dark:hover:text-white transition-colors duration-200"
             viewBox="0 0 1792 1792"
@@ -108,8 +108,8 @@ const Footer = () => (
           </svg>
         </a>
       </div>
-      <div className="text-center text-gray-500 dark:text-gray-200 pt-10 sm:pt-12 font-light flex items-center justify-center">
-        Created by Sergio Obolevich
+      <div className="text-center text-lg text-gray-800 dark:text-gray-200 pt-5 sm:pt-6 pb-3 font-light flex items-center justify-center">
+        <a target="_blank" rel="noreferrer" href="https://www.github.com/chubaquelo">Created by Sergio Obolevich</a>
       </div>
     </div>
   </footer>

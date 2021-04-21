@@ -35,18 +35,44 @@ const Product = () => {
           </h1>
           <p className="text-center mt-5">{currentProduct.description}</p>
           <div className="flex flex-row flex-wrap justify-center mt-12">
-            <div className="w-6/12 text-center" id="product-image">
+            <div className="w-12/12 sm:w-6/12 text-center" id="product-image">
               <img
                 src="https://www.graff.com/dw/image/v2/BFNT_PRD/on/demandware.static/-/Sites-master-catalog/default/dwa11adeb0/images/hi-res/RGN464_RGN464_GN9417_model_4.jpg?sw=1000&sh=1000"
                 alt="Necklace"
               />
             </div>
-            <div className="w-6/12 text-center" id="product-buy-now">
-              <p className="text-xl">
-                Price:
-                {' $'}
-                {currentProduct.price}
+            <div
+              className="w-full lg:w-6/12 text-center pt-5"
+              id="product-buy-now-section"
+            >
+              <p>
+                ★★★★ - 5.0 |
+                <a
+                  href="/"
+                  className="text-sm cursor-pointer hover:underline ml-2"
+                >
+                  See 50 reviews
+                </a>
               </p>
+
+              <div className="flex flex-row justify-center items-center mt-3">
+                <p className="text-3xl mr-4">
+                  {' $'}
+                  {currentProduct.price}
+                </p>
+                <button
+                  type="button"
+                  className="bg-yellow-500 text-white p-1 px-2 hover:bg-green-600 hover:shadow-lg"
+                >
+                  Buy Now
+                </button>
+              </div>
+              <hr className="bg-gray-100 w-8/12 mx-auto my-8" />
+              <div className="text-center w-8/12 mx-auto text-gray-500">
+                <p>Enjoy Free shipping!</p>
+                <p>All payment methods accepted!</p>
+              </div>
+              <hr className="bg-gray-100 w-8/12 mx-auto my-8" />
             </div>
           </div>
         </section>
