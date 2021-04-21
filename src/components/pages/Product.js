@@ -25,7 +25,7 @@ const Product = () => {
   return (
     <>
       {currentProduct === [] || currentProduct === undefined ? (
-        <h1 className="text-5xl text-center">Loading...</h1>
+        <h1 className="text-5xl text-center my-20">Loading...</h1>
       ) : (
         <section className="h-60percent-vh mt-5">
           <div className="flex flex-row flex-wrap justify-center mt-5">

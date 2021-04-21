@@ -9,7 +9,7 @@ import DefaultNotFound from './components/pages/DefaultNotFound';
 function App() {
   return (
     <Router>
-      <main className="w-11/12 lg:w-8/12 mx-auto min-h-screen">
+      <main className="w-11/12 lg:w-9/12 mx-auto min-h-screen">
         <Header />
         <Switch>
           <Route exact path="/">

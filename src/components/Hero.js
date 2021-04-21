@@ -5,7 +5,7 @@ function Hero() {
   return (
     <>
       <div>
-        <div className="w-screen-15percent relative lg:right-52">
+        <div className="w-screen-15percent relative lg:right-36">
           <div className="golden-gradient mt-6 relative rounded-lg container mx-auto flex flex-col items-center pt-12 sm:pt-20 pb-24 sm:pb-32 md:pb-48 lg:pb-56 xl:pb-64">
             <svg
               className="mr-2 lg:mr-12 mt-2 lg:mt-12 absolute right-0 top-0"
