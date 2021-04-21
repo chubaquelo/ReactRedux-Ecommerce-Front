@@ -356,7 +356,7 @@ function Hero() {
               </g>
             </svg>
             <div className="w-11/12 sm:w-2/3 mb-5 sm:mb-10 lg:-mt-10">
-              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center text-white font-bold leading-tight">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center text-black font-bold leading-tight shiny-title">
                 Shop Fine Jewelry For All Days
               </h1>
             </div>
@@ -370,7 +370,11 @@ function Hero() {
                     Products
                   </button>
                 </AnchorLink>
-                <a href="https://github.com/chubaquelo/ReactRedux-Ecommerce-Front" target="_blank" rel="noreferrer">
+                <a
+                  href="https://github.com/chubaquelo/ReactRedux-Ecommerce-Front"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <button
                     type="button"
                     className="hover:bg-white hover:text-yellow-600 hover:border-yellow-600 ml-3 sm:ml-6 bg-transparent transition duration-150 ease-in-out focus:outline-none hover:bg-yellow-700-800 rounded border border-white text-white px-4 sm:px-8 py-1 sm:py-3 text-sm"
