@@ -42,9 +42,11 @@ const Product = () => {
               <h1 className="text-3xl font-bold text-center">
                 {currentProduct.title}
               </h1>
-              <p className="text-center my-5 w-10/12 mx-auto">{currentProduct.description}</p>
+              <p className="text-center my-5 w-10/12 mx-auto">
+                {currentProduct.description}
+              </p>
               <p>
-                ★★★★ - 5.0 |
+                ★★★★★ - 5.0 |
                 <a
                   href="/"
                   className="text-sm cursor-pointer hover:underline ml-2"

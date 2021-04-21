@@ -1,10 +1,12 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { DragSwitch } from 'react-dragswitch';
 import getProducts from '../store/actions';
 import ProductCard from './_ProductCard';
+import 'react-dragswitch/dist/index.css';
 
 const ProductsList = () => {
-  // const [loading, setLoading] = useState(false);
+  const [checked, setChecked] = useState(false);
   const dispatch = useDispatch();
   const products = useSelector(state => state.products);
 
@@ -25,9 +27,21 @@ const ProductsList = () => {
   ));
 
   return (
-    <section id="products-list" className="mt-6 flex flex-row flex-wrap">
-      {productMap}
-    </section>
+    <>
+      <div className="w-12/12 mt-10 flex justify-center">
+        <span className="mr-2 italic text-gray-700">Only gold jewels</span>
+        <DragSwitch
+          checked={checked}
+          onColor="rgba(199, 129, 0, 0.91)"
+          onChange={e => {
+            setChecked(e);
+          }}
+        />
+      </div>
+      <section id="products-list" className="mt-6 flex flex-row flex-wrap">
+        {productMap}
+      </section>
+    </>
   );
 };
 
