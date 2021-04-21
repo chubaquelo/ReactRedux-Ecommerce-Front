@@ -28,11 +28,7 @@ const Product = () => {
         <h1 className="text-5xl text-center">Loading...</h1>
       ) : (
         <section className="h-60percent-vh mt-5">
-          <h1 className="text-3xl font-bold text-center">
-            {currentProduct.title}
-          </h1>
-          <p className="text-center mt-5">{currentProduct.description}</p>
-          <div className="flex flex-row flex-wrap justify-center mt-12">
+          <div className="flex flex-row flex-wrap justify-center mt-5">
             <div className="w-12/12 sm:w-6/12 text-center" id="product-image">
               <img
                 src="https://www.graff.com/dw/image/v2/BFNT_PRD/on/demandware.static/-/Sites-master-catalog/default/dwa11adeb0/images/hi-res/RGN464_RGN464_GN9417_model_4.jpg?sw=1000&sh=1000"
@@ -43,6 +39,10 @@ const Product = () => {
               className="w-full lg:w-6/12 text-center pt-5"
               id="product-buy-now-section"
             >
+              <h1 className="text-3xl font-bold text-center">
+                {currentProduct.title}
+              </h1>
+              <p className="text-center my-5 w-10/12 mx-auto">{currentProduct.description}</p>
               <p>
                 ★★★★ - 5.0 |
                 <a
