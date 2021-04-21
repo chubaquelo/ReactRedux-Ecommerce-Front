@@ -42,8 +42,13 @@ const Product = () => {
               <h1 className="text-3xl font-bold text-center">
                 {currentProduct.title}
               </h1>
-              <p className="text-center my-5 w-10/12 mx-auto">
+              <p className="text-center mt-5 mb-2 w-10/12 mx-auto">
                 {currentProduct.description}
+              </p>
+              <p className="text-center text-sm text-gray-500 mb-5 w-10/12 mx-auto">
+                Material:
+                {' '}
+                {currentProduct.material === 'gold' ? 'Fine Gold' : 'Fine Silver'}
               </p>
               <p>
                 ★★★★★ - 5.0 |

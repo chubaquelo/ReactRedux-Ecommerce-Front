@@ -30,6 +30,8 @@ const ProductsList = () => {
     </article>
   ));
 
+  window.console.log(products);
+
   return (
     <>
       <div className="w-12/12 mt-10 flex justify-center">

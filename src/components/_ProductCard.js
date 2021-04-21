@@ -3,18 +3,18 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 const ProductCard = ({
-  key, keyForLink, title, description, price,
+  key,
+  keyForLink,
+  title,
+  description,
+  price,
 }) => (
   <div className="w-full flex justify-center items-center" key={key}>
     <div className="w-full p-4">
       <div className="card flex flex-col justify-center p-10 bg-white rounded-lg shadow-2xl">
         <div className="prod-title">
-          <p className="text-2xl uppercase text-gray-900 font-bold">
-            { title }
-          </p>
-          <p className="uppercase text-sm text-gray-400">
-            { description }
-          </p>
+          <p className="text-2xl uppercase text-gray-900 font-bold">{title}</p>
+          <p className="uppercase text-sm text-gray-400">{description}</p>
         </div>
         <div className="prod-img">
           <img
@@ -27,7 +27,7 @@ const ProductCard = ({
           <div className="flex flex-col md:flex-row justify-between items-center text-gray-900">
             <p className="font-bold text-xl">
               $
-              { price }
+              {price}
             </p>
             <Link to={`/product/${keyForLink}`}>
               <button
