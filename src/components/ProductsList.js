@@ -25,7 +25,7 @@ const ProductsList = () => {
   ));
 
   return (
-    <section className="mt-6 flex flex-row flex-wrap">
+    <section id="products-list" className="mt-6 flex flex-row flex-wrap">
       {productMap}
     </section>
   );

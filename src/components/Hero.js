@@ -1,4 +1,5 @@
 import React from 'react';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 function Hero() {
   return (
@@ -361,18 +362,22 @@ function Hero() {
             </div>
             <div className="flex justify-center items-center mb-10 sm:mb-20">
               <div>
-                <button
-                  type="button"
-                  className="hover:text-white hover:bg-transparent hover:border-white border bg-white transition duration-150 ease-in-out focus:outline-none  rounded text-yellow-600 px-4 sm:px-8 py-1 sm:py-3 text-sm"
-                >
-                  Products
-                </button>
-                <button
-                  type="button"
-                  className="hover:bg-white hover:text-yellow-600 hover:border-yellow-600 ml-3 sm:ml-6 bg-transparent transition duration-150 ease-in-out focus:outline-none hover:bg-yellow-700-800 rounded border border-white text-white px-4 sm:px-8 py-1 sm:py-3 text-sm"
-                >
-                  Learn More
-                </button>
+                <AnchorLink href="#products-list">
+                  <button
+                    type="button"
+                    className="hover:text-white hover:bg-transparent hover:border-white border bg-white transition duration-150 ease-in-out focus:outline-none  rounded text-yellow-600 px-4 sm:px-8 py-1 sm:py-3 text-sm"
+                  >
+                    Products
+                  </button>
+                </AnchorLink>
+                <a href="https://github.com/chubaquelo/ReactRedux-Ecommerce-Front" target="_blank" rel="noreferrer">
+                  <button
+                    type="button"
+                    className="hover:bg-white hover:text-yellow-600 hover:border-yellow-600 ml-3 sm:ml-6 bg-transparent transition duration-150 ease-in-out focus:outline-none hover:bg-yellow-700-800 rounded border border-white text-white px-4 sm:px-8 py-1 sm:py-3 text-sm"
+                  >
+                    Learn More
+                  </button>
+                </a>
               </div>
             </div>
           </div>
