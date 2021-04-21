@@ -5,7 +5,6 @@ import getProducts from '../../store/actions';
 
 const Product = () => {
   const productId = useParams().id;
-  const [loading, setLoading] = useState(true);
   const dispatch = useDispatch();
   const products = useSelector(state => state.products);
   const [currentProduct, setCurrentProduct] = useState([]);
@@ -16,7 +15,6 @@ const Product = () => {
   }, []);
 
   useEffect(() => {
-    setLoading(false);
     setCurrentProduct(
       products.filter(product => product.id.toString() === productId)[0],
     );
@@ -26,8 +24,8 @@ const Product = () => {
 
   return (
     <>
-      {loading ? (
-        <p>Loading</p>
+      {currentProduct === [] || currentProduct === undefined ? (
+        <h1 className="text-5xl text-center">Loading...</h1>
       ) : (
         <section className="h-60percent-vh mt-5">
           <h1 className="text-3xl font-bold text-center">
