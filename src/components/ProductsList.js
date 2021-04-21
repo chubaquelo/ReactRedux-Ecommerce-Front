@@ -6,9 +6,13 @@ import ProductCard from './_ProductCard';
 import 'react-dragswitch/dist/index.css';
 
 const ProductsList = () => {
-  const [checked, setChecked] = useState(false);
+  const [onlyGoldJewels, setOnlyGoldJewels] = useState(false);
   const dispatch = useDispatch();
-  const products = useSelector(state => state.products);
+  const products = onlyGoldJewels
+    ? []
+      .concat(useSelector(state => state.products))
+      .filter(p => p.material === 'gold')
+    : [].concat(useSelector(state => state.products));
 
   useEffect(() => {
     dispatch(getProducts());
@@ -31,10 +35,10 @@ const ProductsList = () => {
       <div className="w-12/12 mt-10 flex justify-center">
         <span className="mr-2 italic text-gray-700">Only gold jewels</span>
         <DragSwitch
-          checked={checked}
+          checked={onlyGoldJewels}
           onColor="rgba(199, 129, 0, 0.91)"
           onChange={e => {
-            setChecked(e);
+            setOnlyGoldJewels(e);
           }}
         />
       </div>
