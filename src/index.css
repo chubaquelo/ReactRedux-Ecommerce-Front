@@ -18,15 +18,15 @@
 }
 
 .w-screen-15percent {
-	width: calc(100vw - 10%);
+  width: calc(100vw - 10%);
 }
 
 .golden-gradient {
-	background:linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+  background: linear-gradient(to right, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c);
 }
 
-.shiny-title { 
-	-webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.8) 70%);
+.shiny-title {
+  -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, .6) 30%, #000 50%, rgba(0, 0, 0, .8) 70%);
   -webkit-mask-size: 200%;
   animation: shine 3s linear infinite;
 }
