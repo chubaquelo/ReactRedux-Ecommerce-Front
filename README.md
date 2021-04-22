@@ -28,7 +28,7 @@ Products are coming by API from a Rails Server.
 
 ## Mobile Responsive Layout
 
-<img src="https://i.imgur.com/EjFIYqY.gif" width="420px" />
+<img src="https://i.imgur.com/g1xbzri.gif" width="420px" />
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
