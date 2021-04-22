@@ -7,4 +7,4 @@ describe('renders correctly', () => {
     const tree = renderer.create(<Hero />).toJSON();
     expect(tree).toMatchSnapshot();
   });
-} )
+});
