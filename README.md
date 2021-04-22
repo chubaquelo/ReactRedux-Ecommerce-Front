@@ -7,7 +7,7 @@ In this project I have built a Jewelry Ecommerce design approach using React-Red
 The app is deployed in Netlify.
 [Click Here to See Live Demo](https://hardcore-elion-bbb6da.netlify.app/)
 
-Products are coming by API from a Rails Server.
+Products information is coming form a Rails API Server.
 
 ![Screenshot](https://i.imgur.com/EjFIYqY.gif)
 
