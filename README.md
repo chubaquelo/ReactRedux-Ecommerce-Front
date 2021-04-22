@@ -1,3 +1,36 @@
+# Jewelry E-commerce React Frontend
+
+In this project I have built a Jewelry Ecommerce design approach using React-Redux, serving the products information with a Rails API.
+
+## LIVE DEMO
+
+The app is deployed in Netlify.
+[Click Here to See Live Demo](https://hardcore-elion-bbb6da.netlify.app/)
+
+Products are coming by API from a Rails Server.
+
+![Screenshot](https://i.imgur.com/iKCrpxD.gif)
+
+
+## Built With
+
+- HTML + CSS
+- Responsive Design
+- Tailwind CSS
+- React.js
+- JavaScript, ES6, AXIOS
+- Redux
+- NPM
+- ESLINT + Stylelint
+- React Router
+- React-Redux
+- Ruby on Rails (API)
+
+## Mobile Responsive Layout
+
+<img src="https://i.imgur.com/hi6BktO.gif" width="420px" />
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
 ## Available Scripts
