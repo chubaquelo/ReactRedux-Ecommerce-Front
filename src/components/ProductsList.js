@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { DragSwitch } from 'react-dragswitch';
 import getProducts from '../store/actions';
 import ProductCard from './_ProductCard';
 import 'react-dragswitch/dist/index.css';
+import ProductsFilter from './_ProductsFilter';
 
 const ProductsList = () => {
   const [onlyGoldJewels, setOnlyGoldJewels] = useState(false);
@@ -34,12 +34,9 @@ const ProductsList = () => {
     <>
       <div className="w-12/12 mt-10 flex justify-center">
         <span className="mr-2 italic text-gray-700">Only gold jewels</span>
-        <DragSwitch
-          checked={onlyGoldJewels}
-          onColor="rgba(199, 129, 0, 0.91)"
-          onChange={e => {
-            setOnlyGoldJewels(e);
-          }}
+        <ProductsFilter
+          onlyGoldJewels={onlyGoldJewels}
+          setOnlyGoldJewels={setOnlyGoldJewels}
         />
       </div>
       <section id="products-list" className="mt-6 flex flex-row flex-wrap">
