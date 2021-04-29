@@ -7,12 +7,19 @@ import ProductsFilter from './_ProductsFilter';
 
 const ProductsList = () => {
   const [onlyGoldJewels, setOnlyGoldJewels] = useState(false);
+  const [searchTerm, setSearchTerm] = useState('');
   const dispatch = useDispatch();
-  const products = onlyGoldJewels
+  let products = onlyGoldJewels
     ? []
       .concat(useSelector(state => state.products))
       .filter(p => p.material === 'gold')
     : [].concat(useSelector(state => state.products));
+
+  if (searchTerm !== '') {
+    products = products.filter(product => (
+      product.title.toLowerCase().includes(searchTerm.toLowerCase())
+    ));
+  }
 
   useEffect(() => {
     dispatch(getProducts());
@@ -35,6 +42,8 @@ const ProductsList = () => {
         <ProductsFilter
           onlyGoldJewels={onlyGoldJewels}
           setOnlyGoldJewels={setOnlyGoldJewels}
+          searchTerm={searchTerm}
+          setSearchTerm={setSearchTerm}
         />
       </div>
       <section id="products-list" className="mt-6 flex flex-row flex-wrap">
