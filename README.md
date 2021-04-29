@@ -7,9 +7,9 @@ In this project I have built a Jewelry Ecommerce design approach using React-Red
 The app is deployed in Netlify.
 [Click Here to See Live Demo](https://hardcore-elion-bbb6da.netlify.app/)
 
-Products are coming by API from a Rails Server.
+Products information is coming form a Rails API Server.
 
-![Screenshot](https://i.imgur.com/iKCrpxD.gif)
+![Screenshot](https://i.imgur.com/EjFIYqY.gif)
 
 
 ## Built With
@@ -28,7 +28,7 @@ Products are coming by API from a Rails Server.
 
 ## Mobile Responsive Layout
 
-<img src="https://i.imgur.com/hi6BktO.gif" width="420px" />
+<img src="https://i.imgur.com/g1xbzri.gif" width="420px" />
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
