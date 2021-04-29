@@ -33,6 +33,35 @@ Products information is coming form a Rails API Server.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
+## Getting Started
+
+To get a local copy up and running follow these simple example steps.
+
+# Instructions (Set Up)
+
+Clone this repository in your computer
+```
+$  git clone https://github.com/chubaquelo/ReactRedux-Ecommerce-Front
+```
+Access the folder where you cloned the project in your explorer.
+
+If you want to modify the source code, please install dependencies after cloning the repository.
+You can do so by calling this commands from root folder (make sure you have Node / NPM installed on your PC):
+```
+$  npm install
+```
+To run the react server run:
+```
+$  npm run start
+```
+
+# Run tests
+
+To run tests you can do it with the command:
+```
+$  npm run test
+```
+
 ## Available Scripts
 
 In the project directory, you can run:
