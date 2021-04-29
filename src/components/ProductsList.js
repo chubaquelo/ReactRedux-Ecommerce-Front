@@ -21,7 +21,6 @@ const ProductsList = () => {
   const productMap = products.map(p => (
     <article key={p.id} className="w-full sm:w-1/2 xl:w-4/12">
       <ProductCard
-        key={p.id}
         keyForLink={p.id}
         title={p.title}
         description={p.description}

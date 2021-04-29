@@ -3,13 +3,12 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 const ProductCard = ({
-  key,
   keyForLink,
   title,
   description,
   price,
 }) => (
-  <div className="w-full flex justify-center items-center" key={key}>
+  <div className="w-full flex justify-center items-center">
     <div className="w-full p-4">
       <div className="card flex flex-col justify-center p-10 bg-white rounded-lg shadow-2xl">
         <div className="prod-title">
@@ -47,7 +46,6 @@ const ProductCard = ({
 export default ProductCard;
 
 ProductCard.defaultProps = {
-  key: 0,
   keyForLink: 0,
   title: '',
   description: '',
@@ -55,7 +53,6 @@ ProductCard.defaultProps = {
 };
 
 ProductCard.propTypes = {
-  key: PropTypes.number,
   keyForLink: PropTypes.number,
   title: PropTypes.string,
   description: PropTypes.string,

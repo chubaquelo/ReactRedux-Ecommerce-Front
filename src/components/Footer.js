@@ -7,33 +7,28 @@ const Footer = () => (
       <ul className="max-w-screen-md mx-auto text-lg font-light flex flex-wrap justify-between">
         <li className="my-2">
           <Link to="/">
-            <a
+            <p
               className="text-gray-500 hover:text-gray-800 dark:text-gray-500 dark:hover:text-white transition-colors duration-200"
-              href="/"
             >
               FAQ
-            </a>
+            </p>
           </Link>
         </li>
         <li className="my-2">
           <Link to="/">
-            <a
+            <p
               className="text-gray-500 hover:text-gray-800 dark:text-gray-500 dark:hover:text-white transition-colors duration-200"
-              href="/"
             >
               Configuration
-            </a>
+            </p>
           </Link>
         </li>
         <li className="my-2">
-          <a
+          <p
             className="text-gray-500 hover:text-gray-800 dark:text-gray-500 dark:hover:text-white transition-colors duration-200"
-            href="https://www.github.com/chubaquelo"
-            target="_blank"
-            rel="noreferrer"
           >
             Github
-          </a>
+          </p>
         </li>
         <li className="my-2">
           <a
