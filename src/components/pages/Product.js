@@ -20,8 +20,6 @@ const Product = () => {
     );
   }, [products]);
 
-  window.console.log(products.filter(product => product.id.toString() === productId)[0]);
-
   return (
     <>
       {currentProduct === [] || currentProduct === undefined ? (
