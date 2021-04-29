@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Footer from '../Footer';
 import { BrowserRouter as Router } from 'react-router-dom';
+import Footer from '../Footer';
 
 describe('renders correctly', () => {
   it('renders correctly', () => {
@@ -9,7 +9,7 @@ describe('renders correctly', () => {
       .create(
         <Router>
           <Footer />
-        </Router>
+        </Router>,
       )
       .toJSON();
     expect(tree).toMatchSnapshot();

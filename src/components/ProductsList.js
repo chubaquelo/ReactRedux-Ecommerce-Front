@@ -33,7 +33,6 @@ const ProductsList = () => {
   return (
     <>
       <div className="w-12/12 mt-10 flex justify-center">
-        <span className="mr-2 italic text-gray-700">Only gold jewels</span>
         <ProductsFilter
           onlyGoldJewels={onlyGoldJewels}
           setOnlyGoldJewels={setOnlyGoldJewels}

@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Header from '../Header';
 import { BrowserRouter as Router } from 'react-router-dom';
+import Header from '../Header';
 
 describe('renders correctly', () => {
   it('renders correctly', () => {
@@ -9,7 +9,7 @@ describe('renders correctly', () => {
       .create(
         <Router>
           <Header />
-        </Router>
+        </Router>,
       )
       .toJSON();
     expect(tree).toMatchSnapshot();
