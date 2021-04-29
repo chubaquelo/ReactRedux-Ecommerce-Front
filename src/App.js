@@ -6,26 +6,24 @@ import Main from './components/pages/Main';
 import Product from './components/pages/Product';
 import DefaultNotFound from './components/pages/DefaultNotFound';
 
-function App() {
-  return (
-    <Router>
-      <main className="w-11/12 lg:w-9/12 mx-auto min-h-screen">
-        <Header />
-        <Switch>
-          <Route exact path="/">
-            <Main />
-          </Route>
-          <Route path="/product/:id">
-            <Product />
-          </Route>
-          <Route path="*">
-            <DefaultNotFound />
-          </Route>
-        </Switch>
-        <Footer />
-      </main>
-    </Router>
-  );
-}
+const App = () => (
+  <Router>
+    <main className="w-11/12 lg:w-9/12 mx-auto min-h-screen">
+      <Header />
+      <Switch>
+        <Route exact path="/">
+          <Main />
+        </Route>
+        <Route path="/product/:id">
+          <Product />
+        </Route>
+        <Route path="*">
+          <DefaultNotFound />
+        </Route>
+      </Switch>
+      <Footer />
+    </main>
+  </Router>
+);
 
 export default App;
