@@ -1,0 +1,64 @@
+{
+  "name": "reactredux-ecommerce-front",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@craco/craco": "^6.1.1",
+    "@reduxjs/toolkit": "^1.5.1",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "axios": "^0.21.1",
+    "next-page-transitions": "^1.0.0-beta.2",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-anchor-link-smooth-scroll": "^1.0.12",
+    "react-dom": "^17.0.2",
+    "react-dragswitch": "^1.0.1",
+    "react-redux": "^7.2.3",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "react-test-renderer": "^17.0.2",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0"
+  },
+  "scripts": {
+    "start": "craco start",
+    "build": "craco build",
+    "test": "jest",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.13.14",
+    "@tailwindcss/postcss7-compat": "^2.1.0",
+    "autoprefixer": "^9.8.6",
+    "eslint": "^7.24.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.23.2",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "postcss": "^7.0.35",
+    "stylelint": "^13.12.0",
+    "stylelint-config-standard": "^21.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.19.0",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.1.0"
+  }
+}

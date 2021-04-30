@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly renders correctly 1`] = `
+<header
+  className="h-15percent-vh flex flex-row justify-center mt-3 w-10/12 mx-auto"
+>
+  <div
+    className="w-2/12 flex items-center justify-center"
+    id="logo"
+  >
+    <a
+      href="/"
+      onClick={[Function]}
+    >
+      <img
+        alt="Logo"
+        className="cursor-pointer"
+        src="../assets/logo-jewelry.png"
+        width="100"
+      />
+    </a>
+  </div>
+  <div
+    className="header-right-col w-10/12 flex flex-col"
+  >
+    <div
+      className="filita-de-arriba text-right py-1 text-black text-sm pr-3"
+    >
+      <p
+        className="italic text-gray-500 mr-2"
+      >
+        Exclusive jewelry. Special for gifts.
+      </p>
+    </div>
+    <div
+      className="filita-de-abajo flex flex-row h-full"
+    >
+      <nav
+        className="w-12/12 md:w-10/12 flex items-center w-full px-6"
+        id="navbar"
+      >
+        <ul
+          className="flex flex-row w-full justify-around px-10"
+        >
+          <a
+            href="/"
+            onClick={[Function]}
+          >
+            <li
+              className="cursor-pointer text-black font-bold"
+            >
+              Home
+            </li>
+          </a>
+          <a
+            href="/"
+            onClick={[Function]}
+          >
+            <li
+              className="cursor-pointer text-black font-bold hidden sm:inline-flex"
+            >
+              Products
+            </li>
+          </a>
+          <a
+            href="/not-found"
+            onClick={[Function]}
+          >
+            <li
+              className="cursor-pointer text-black font-bold hidden sm:inline-flex"
+            >
+              Accesories
+            </li>
+          </a>
+          <a
+            href="/not-found"
+            onClick={[Function]}
+          >
+            <li
+              className="cursor-pointer text-black font-bold hidden sm:inline-flex"
+            >
+              Contact
+            </li>
+          </a>
+        </ul>
+      </nav>
+      <div
+        className="flex items-center justify-center w-2/12 hidden lg:inline-flex"
+        id="cart-btn"
+      >
+        <button
+          className="py-1 bg-yellow-300 px-2 cursor-pointer hover:bg-yellow-400 text-black shadow-md"
+          type="button"
+        >
+          Cart: 0 Items
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+`;

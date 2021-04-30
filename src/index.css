@@ -1,0 +1,37 @@
+/* ./src/index.css */
+/* stylelint-disable */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* stylelint-enable */
+
+.h-15percent-vh {
+  height: 15vh;
+}
+
+.h-25percent-vh {
+  height: 15vh;
+}
+
+.h-60percent-vh {
+  min-height: 60vh;
+}
+
+.w-screen-15percent {
+  width: calc(100vw - 10%);
+}
+
+.golden-gradient {
+  background: linear-gradient(to right, #bf953f, #fcf6ba, #b38728, #fbf5b7, #aa771c);
+}
+
+.shiny-title {
+  -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.6) 30%, #000 50%, rgba(0, 0, 0, 0.8) 70%);
+  -webkit-mask-size: 200%;
+  animation: shine 3s linear infinite;
+}
+
+@keyframes shine {
+  from { -webkit-mask-position: 150%; }
+  to { -webkit-mask-position: -50%; }
+}
